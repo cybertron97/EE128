@@ -1,0 +1,27 @@
+/* This is a linker parameter file for the MC9S12DG256 */
+
+NAMES END
+
+/* CodeWarrior will pass all the needed files to the linker by command line.
+   But here you may add your own files too. */
+
+/* use some descriptive names */
+SECTIONS
+    MY_RAM        = READ_WRITE 0x1000 TO 0x1FFF; /* 4095 bytes of data starting from 0x1000 */
+    MY_PSEUDO_ROM = READ_ONLY  0x2000 TO 0x3FFF; /* 8191 bytes of program code from 0x2000 */
+END
+    
+PLACEMENT /* here all predefined and user segments are placed into the SEGMENTS defined above.*/
+    _PRESTART, /* Used in HIWARE format: jump to _Startup at the code start */
+    STARTUP,   /* startup data structures */
+    ROM_VAR,   /* constant variables */
+    STRINGS,   /* string literals */
+    DEFAULT_ROM, NON_BANKED, /* runtime routines which must not be banked */
+    COPY         INTO MY_PSEUDO_ROM; /* copy down information: how to initialize variables */
+                                     /* in case you want to use MY_PSEUDO_ROM here as well, 
+                                        make sure that all files (incl. library files) are
+                                        compiled with the option: -OnB=b */
+    DEFAULT_RAM  INTO MY_RAM;
+END
+
+STACKSIZE 0x100
