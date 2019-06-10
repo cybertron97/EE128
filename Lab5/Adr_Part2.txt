@@ -1,0 +1,26 @@
+//// LED connected to digital pin 9
+//int ledPin = 3;  
+//void setup() {
+//  // nothing happens in setup
+//  TCCR2B = (TCCR2B & 0xF8) | 0x05;
+//}
+//
+//void loop() {
+//  analogWrite(ledPin, 123);
+////  analogWrite(ledPin, 127.5);
+////  analogWrite(ledPin, 252.45);
+//delay(100000);
+//}
+
+// LED connected to digital pin 9
+int ledPin = 3;  
+void setup() {
+  // nothing happens in setup
+  //TCCR2B = (TCCR2B & 0xF8) | 0x05;
+}
+
+void loop() {
+  analogWrite(ledPin, 200);
+//  analogWrite(ledPin, 127.5);
+//  analogWrite(ledPin, 252.45);
+}
