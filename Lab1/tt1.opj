@@ -1,0 +1,35 @@
+(ExpressProject "tt1"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\tt1.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (MPSSessionName "leya_")
+  (PartMRUSelector)
+  (LastUsedLibraryBrowseDirectory
+     "C:\Users\leya_\OneDrive\UCR - Classes\UCR Spring 2019\EE 128 DATA ACQUIS\Lab\lib")
+  (GlobalState
+    (FileView
+      (Path "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 244"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 52 1092 52 335")
+        (Scroll "-82 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "C:\USERS\LEYA_\DESKTOP\TT1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))
